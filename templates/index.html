@@ -1,0 +1,15 @@
+<!DOCTYPE html>  <!-- HTML5 document type -->
+<html>
+<head>
+	<!-- -->
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+	<!-- use go-debug.js when developing and go.js when deploying -->
+	<script src="{{ url_for('static', filename = 'javascript/go-debug.js') }}"></script>
+	<!-- import GoJS file -->
+	<script src="{{ url_for('static', filename = 'javascript/iBeaconNodes.js') }}"></script>
+
+</head>
+<body onload="init(myDiagramDiv)">
+	<div id="myDiagramDiv"></div>
+</body>
+</html>
